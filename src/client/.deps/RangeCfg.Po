@@ -1,0 +1,11 @@
+RangeCfg.o: RangeCfg.cc ../../src/client/RangeCfg.h \
+ ../../src/xstd/h/iostream.h ../../src/xstd/h/iosfwd.h \
+ ../../src/xstd/Size.h
+
+../../src/client/RangeCfg.h:
+
+../../src/xstd/h/iostream.h:
+
+../../src/xstd/h/iosfwd.h:
+
+../../src/xstd/Size.h:
