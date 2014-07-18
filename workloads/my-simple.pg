@@ -32,7 +32,7 @@ Robot R = {
 	recurrence = 55% / SimpleContent.cachable; // adjusted to get 55% DHR
 
 	origins = S.addresses;      // where the origin servers are
-	addresses = ['172.17.0.48' ]; // where these robot agents will be created	
+	addresses = ['172.17.0.48-50' ]; // where these robot agents will be created	
 };
 
 // commit to using these servers and robots
