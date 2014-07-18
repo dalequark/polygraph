@@ -3,7 +3,7 @@
  *
  */
 
-#include "include/benches.pg"
+#include "workloads/include/benches.pg"
 
 /* the settings bellow assume bench ID 101
  * any ID from 100 to 199 can be used */
@@ -11,12 +11,12 @@
 Bench TheBench = benchPolyMix4;
 TheBench = {
         client_side = {
-                addr_space = [ '128.112.139.206'];
-                hosts = [ '128.112.139.206'];   // replace with IPs of your PCs
+                addr_space = [ '172.17.0.48'];
+                hosts = [ '172.17.0.48'];   // replace with IPs of your PCs
         };
         server_side = {
-                addr_space = [ '128.112.139.237' ];
-                hosts = [ '128.112.139.237:9090' ]; // replace with IPs of your PCs
+                addr_space = [ '172.17.0.46' ];
+                hosts = [ '172.17.0.46' ]; // replace with IPs of your PCs
         };
 };
 
@@ -46,4 +46,4 @@ DnsResolver Resolver;
 Resolver.servers = [ '128.112.136.10:53' ];
 
 // include all the boring details
-#include "include/polymix-4-guts.pg"
+#include "workloads/include/polymix-4-guts.pg"

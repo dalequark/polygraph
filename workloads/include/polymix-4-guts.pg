@@ -7,7 +7,7 @@
  * all user-specified parameters are in polymix-4.pg */
 
 
-#include "include/contents.pg"
+#include "workloads/include/contents.pg"
 
 
 Server S = { 
@@ -21,7 +21,7 @@ Server S = {
 	idle_pconn_tout = 15sec;
 	abort_prob = 0.1%;
 
-	addresses = ['128.112.139.237'];
+	addresses = ['172.17.0.46:9090'];
 	//addresses = serverAddrs(asPolyMix4, TheBench);
 	http_versions = [ "1.0" ];  // newer agents use HTTP/1.1 by default
 };
@@ -66,7 +66,7 @@ Robot R = {
 
 	dns_resolver = Resolver;
 	origins = Map.names;
-	addresses = ['128.112.139.237:9090'];
+	addresses = ['172.17.0.48'];
 	//addresses = robotAddrs(asPolyMix4, TheBench);
 	http_versions = [ "1.0" ];  // newer agents use HTTP/1.1 by default
 
