@@ -22,7 +22,7 @@ Server S = {
 	contents = [ SimpleContent ];
 	direct_access = contents;
 
-	addresses = ['128.112.139.237:9090']; // where to create these server agents
+	addresses = ['172.17.0.46:9090']; // where to create these server agents
 };
 
 // a primitive robot
@@ -32,8 +32,9 @@ Robot R = {
 	recurrence = 55% / SimpleContent.cachable; // adjusted to get 55% DHR
 
 	origins = S.addresses;      // where the origin servers are
-	addresses = ['128.112.139.206' ]; // where these robot agents will be created
+	addresses = ['172.17.0.48' ]; // where these robot agents will be created	
 };
 
 // commit to using these servers and robots
 use(S, R);
+
