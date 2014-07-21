@@ -3,7 +3,7 @@
  *
  */
 
-#include "include/benches.pg"
+#include "workloads/include/benches.pg"
 
 /* the settings bellow assume bench ID 101
  * any ID from 100 to 199 can be used */
@@ -46,4 +46,4 @@ DnsResolver Resolver;
 Resolver.servers = [ '128.112.136.10:53' ];
 
 // include all the boring details
-#include "include/polymix-4-guts.pg"
+#include "workloads/include/my-polymix-4-guts.pg"
