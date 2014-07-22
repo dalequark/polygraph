@@ -77,7 +77,7 @@ Robot R = {
 
 /* phases */
 
-time platDur = 4hour;      // plateau phases duration (except idle phase)
+time platDur = 2min;      // plateau phases duration (except idle phase)
 time rampDur = platDur/12; // ramp phases duration    (and idle phase)
 
 // limit the growth of the URL "working set" size (WSS)

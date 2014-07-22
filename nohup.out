@@ -1,0 +1,62 @@
+000.00| current time: 1405952246.614397 or Mon, 21 Jul 2014 14:17:26 GMT
+000.00| registered client-side session watches: 0
+000.00| registered client-side data filters: 0
+1405952248.184696# obj: http://172.17.0.46:9090/w1d6bd6a8.5f7b23fd:00000008/t04/_00000001.htm flags: basic,GET, size: 0/-1 xact: 1d6bd6a8.5f7b23fd:0000000c
+GET /w1d6bd6a8.5f7b23fd:00000008/t04/_00000001.htm HTTP/1.0
+Accept: */*
+Host: 172.17.0.46:9090
+X-Xact: 1d6bd6a8.5f7b23fd:00000002 1d6bd6a8.5f7b23fd:0000000c 0
+X-Loc-World: 1d6bd6a8.5f7b23fd:00000008 -1/1 0
+X-Rem-World: 1d6bd6a8.5f7b23fd:00000008 -1/1 0
+X-Target: 172.17.0.46:9090
+X-Abort: 1412400744 2082554117
+X-Phase-Sync-Pos: 0
+Connection: keep-alive
+
+
+1405952252.094600# obj: http://172.17.0.46:9090/w1d6bd6a8.5f7b23fd:00000008/t06/_00000002 flags: basic,GET, size: 0/16822 xact: 1d6bd6a8.5f7b23fd:0000000e
+HTTP/1.0 200 OK
+Cache-Control: private,no-cache
+Pragma: no-cache
+Date: Mon, 21 Jul 2014 14:17:32 GMT
+Connection: keep-alive
+Content-Length: 16521
+X-Target: 172.17.0.46:9090
+X-Xact: 1d6bd6a1.7efb43e7:00000002 1d6bd6a8.5f7b23fd:7ffffff1 0
+X-Abort:  1412400744 2082554117
+X-Phase-Sync-Pos: 0
+
+
+got shutdown signal (2)
+015.02| noticed shutdown signal (2)
+015.02| shutdown reason: got shutdown signal
+000.00| current time: 1405977428.660415 or Mon, 21 Jul 2014 21:17:08 GMT
+000.00| registered client-side session watches: 0
+000.00| registered client-side data filters: 0
+1405977430.230814# obj: http://172.17.0.46:9090/w1d6c3906.5b593ce9:00000008/t06/_00000001 flags: basic,GET, size: 0/-1 xact: 1d6c3906.5b593ce9:0000000c
+GET /w1d6c3906.5b593ce9:00000008/t06/_00000001 HTTP/1.0
+Accept: */*
+Host: 172.17.0.46:9090
+X-Xact: 1d6c3906.5b593ce9:00000002 1d6c3906.5b593ce9:0000000c 0
+X-Loc-World: 1d6c3906.5b593ce9:00000008 -1/1 0
+X-Rem-World: 1d6c3906.5b593ce9:00000008 -1/1 0
+X-Target: 172.17.0.46:9090
+X-Abort: 1412400744 2082554117
+X-Phase-Sync-Pos: 0
+Connection: keep-alive
+
+
+1405977434.140716# obj: http://172.17.0.46:9090/w1d6c3906.5b593ce9:00000008/t06/_00000002 flags: basic,GET,chb, size: 0/18499 xact: 1d6c3906.5b593ce9:0000000e
+HTTP/1.0 200 OK
+Cache-Control: public
+Date: Mon, 21 Jul 2014 21:17:14 GMT
+Connection: keep-alive
+Expires: Wed, 30 Jul 2014 20:03:38 GMT
+Last-Modified: Thu, 29 May 2014 19:51:21 GMT
+Content-Length: 18140
+X-Target: 172.17.0.46:9090
+X-Xact: 1d6c38e5.0a39527c:00000002 1d6c3906.5b593ce9:7ffffff1 0
+X-Abort:  1412400744 2082554117
+X-Phase-Sync-Pos: 0
+
+
