@@ -1,0 +1,50 @@
+
+x/*
+ * PolyMix-4 workload for testing HTTP forward caching proxies
+ *
+ */
+
+#include "workloads/include/benches.pg"
+
+/* the settings bellow assume bench ID 101
+ * any ID from 100 to 199 can be used */
+
+Bench TheBench = benchPolyMix4;
+TheBench = {
+        client_side = {
+                addr_space = [ '172.17.0.48'];
+                hosts = [ '172.17.0.48'];   // replace with IPs of your PCs
+        };
+        server_side = {
+                addr_space = [ '172.17.0.46' ];
+                hosts = [ '172.17.0.46' ]; // replace with IPs of your PCs
+        };
+};
+
+/* You must set all four parameters below.
+ * All parameters must be set from the proxy point of view.
+ * Polygraph will calculate the required number of client-server
+ * pairs and adjust individual pair configuration accordingly. */
+
+
+/* Set your total peak request rate here. For example: 100/sec.
+ * Polygraph will use TheBench to figure out which IP aliases to use.
+ * Polygraph will try to create those aliases. */
+TheBench.peak_req_rate = 100/sec;
+
+/* Set request rate for the cache-filling phase. 
+ * This rate must be between 10% and 100% of peak_req_rate above.
+ * For example: (50%*TheBench.peak_req_rate)   */
+rate FillRate = (50%*TheBench.peak_req_rate);
+
+/* Set the total cache size (disk + RAM). For example: 30GB+1GB.
+ * ProxyCacheSize is used for the cache-filling phase only.   */
+size ProxyCacheSize = 3GB+200MB;
+
+/* Set the address and port number of your DNS server
+ * For example: '172.16.101.100:53' */
+DnsResolver Resolver;
+Resolver.servers = [ '128.112.136.10:53' ];
+
+// include all the boring details
+#include "workloads/include/polymix-4-guts.pg"
